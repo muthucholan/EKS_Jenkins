@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Terraform plan'){
             steps{
-              sh "export TF_VAR_region='${env.region}' && export TF_VAR_env.cluster_name='${env.cluster_name}' && export TF_VAR_env.instance_count='${env.instance_count}' && export TF_VAR_env.instance_size='${env.instance_size} && terraform plan"
+              sh "export TF_VAR_region='${env.region}' && export TF_VAR_env.cluster_name='${env.cluster_name}' && export TF_VAR_env.instance_count='${env.instance_count}' && export TF_VAR_env.instance_size='${env.instance_size}' && terraform plan"
             }
         }
         stage('Approval') {
