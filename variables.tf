@@ -1,6 +1,7 @@
 # Stack Name
 variable "cluster_name" {
   type = string
+  default = "muthu"
 }
 
 # Worker Node instance size
