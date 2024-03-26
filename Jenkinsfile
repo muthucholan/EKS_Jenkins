@@ -23,7 +23,7 @@ pipeline {
     stages {
         stage('Git Checkout'){
             steps{
-                git branch: 'main', credentialsId: 'cred', url: 'https://github.com/Dhruvin4530/EKS_Jenkins'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/muthucholan/EKS_Jenkins'
             }
         }
         stage('Terraform init'){
